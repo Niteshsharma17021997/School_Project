@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="row" style="margin-top:60px;margin-bottom:60px;">
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12" style="height:400px;border:1px solid black;">
+            <p style="text-align:center;font-size:24px;margin-top:20px;font-family:Arial, Helvetica, sans-serif">ADMIN ACCOUNT LOGIN</p>
+            <form asp-controller="login" asp-action="validate">
+                <input class="form-control" type="text" name="username" placeholder="Username" style="width:80%;height:80px;margin-top:20px;margin-left:10%;font-size:16px;font-family:Arial, Helvetica, sans-serif;" />
+                <input class="form-control" type="password" name="password" placeholder="Password" style="width:80%;height:80px;margin-left:10%;font-size:16px;font-family:Arial, Helvetica, sans-serif;" />
+                <input type="submit" value="SIGN IN" style="width:80%;height:40px;margin-top:40px;margin-left:10%;background-color:#3f72ba;border:none;color:white;font-size:14px;" />
+            </form>
+            <p style="text-align:center;font-size:14px;margin-top:10px;font-family:Arial, Helvetica, sans-serif"><a href="/home/index/">Login As Guest</a></p>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+    </div>
+</div>
